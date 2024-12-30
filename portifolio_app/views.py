@@ -34,7 +34,6 @@ def sobre(request):
     servicos = Servico.objects.all()
     exprofissional = ExperienciaProfissional.objects.all()
     projectos = Projeto.objects.all()
-    return render(request, 'home.html', {'perfil':perfil, 'exprofissional':exprofissional, 'area':area, 'servicos':servicos, 'projectos':projectos})
     return render(request, 'sobre.html', {'perfil':perfil, 'exprofissional':exprofissional, 'area':area, 'servicos':servicos, 'projectos':projectos})
 
 def servico(request):
@@ -43,7 +42,6 @@ def servico(request):
     servicos = Servico.objects.all()
     exprofissional = ExperienciaProfissional.objects.all()
     projectos = Projeto.objects.all()
-    return render(request, 'home.html', {'perfil':perfil, 'exprofissional':exprofissional, 'area':area, 'servicos':servicos, 'projectos':projectos})
     servicos = Servico.objects.all()
     return render(request, 'servico.html', {'perfil':perfil, 'exprofissional':exprofissional, 'area':area, 'servicos':servicos, 'projectos':projectos})
 
@@ -54,7 +52,6 @@ def work(request):
     servicos = Servico.objects.all()
     exprofissional = ExperienciaProfissional.objects.all()
     projectos = Projeto.objects.all()
-    return render(request, 'home.html', {'perfil':perfil, 'exprofissional':exprofissional, 'area':area, 'servicos':servicos, 'projectos':projectos})
     return render(request, 'work.html', {'perfil':perfil, 'exprofissional':exprofissional, 'area':area, 'servicos':servicos, 'projectos':projectos})
 
 def detalhe_projecto(request, id):
@@ -63,7 +60,6 @@ def detalhe_projecto(request, id):
     servicos = Servico.objects.all()
     exprofissional = ExperienciaProfissional.objects.all()
     projectos = Projeto.objects.all()
-    return render(request, 'home.html', {'perfil':perfil, 'exprofissional':exprofissional, 'area':area, 'servicos':servicos, 'projectos':projectos})
     return render(request, 'detalhe_projecto.html', {'perfil':perfil, 'exprofissional':exprofissional, 'area':area, 'servicos':servicos, 'projectos':projectos})
 
 def blog(request):
@@ -72,7 +68,6 @@ def blog(request):
     servicos = Servico.objects.all()
     exprofissional = ExperienciaProfissional.objects.all()
     projectos = Projeto.objects.all()
-    return render(request, 'home.html', {'perfil':perfil, 'exprofissional':exprofissional, 'area':area, 'servicos':servicos, 'projectos':projectos})
     return render(request, 'blog.html', {'perfil':perfil, 'exprofissional':exprofissional, 'area':area, 'servicos':servicos, 'projectos':projectos})
 
 def detalhe_blog(request, id):
@@ -81,5 +76,4 @@ def detalhe_blog(request, id):
     servicos = Servico.objects.all()
     exprofissional = ExperienciaProfissional.objects.all()
     projectos = Projeto.objects.all()
-    return render(request, 'home.html', {'perfil':perfil, 'exprofissional':exprofissional, 'area':area, 'servicos':servicos, 'projectos':projectos})
     return render(request, 'detalhe_blog.html', {'perfil':perfil, 'exprofissional':exprofissional, 'area':area, 'servicos':servicos, 'projectos':projectos})
